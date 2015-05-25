@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io</title>
+</head>
+<body>
+    <h1>Test with socket.io</h1>
+
+    <script src = "/socket.io/socket.io.js"></script>
+    <script>
+        var io = io.connect('http://localhost:8080');
+
+        io.emit('sended', {message: 'hola server'});
+        io.on('resend', function(err, data) {
+            console.log(err);
+            console.log(data);
+        });
+        io.on('joined', function(data) {
+            console.log(data.username + ', joined;');
+        })
+
+        io.emit('join', { name: prompt('Give your name!')});
+
+    </script>
+</body>
+</html>

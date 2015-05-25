@@ -1,0 +1,14 @@
+{
+  "name": "test_express",
+  "version": "1.0.0",
+  "description": "Test de express framework",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Marcelo Fuentes",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "request": "^2.55.0"
+  }
+}
