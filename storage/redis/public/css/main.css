@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.container .messages {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.container .send-message-form {
+    margin: 20px auto 0;
+    width: 90%;
+    text-align: center;
+}
+
+.container .send-message-form .message-text {
+    width: 200px;
+    padding: 5px;
+}
