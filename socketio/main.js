@@ -1,7 +1,8 @@
 var express = require('express'),
     app = express(),
     server = require('http').Server(app),
-    io = require('socket.io')(server);
+    io = require('socket.io')(server),
+    PORT = 3000;
 
 io.on('connection', function(socket) {
     socket.on('sended', function(data) {
@@ -21,4 +22,4 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-server.listen(8080, function() { console.log('Server listening on port 8080') });
+server.listen(PORT, function() { console.log('Server listening on port %d', PORT) });

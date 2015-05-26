@@ -1,7 +1,8 @@
 var express = require('express'),
     app = express(),
     fs = require('fs'),
-    request = require('request');
+    request = require('request'),
+    PORT = 3000;
 
 app.get('/', function(req, res) {
     app.use('/', express.static(__dirname + '/public'));
@@ -42,4 +43,4 @@ app.get('/search/:query', function(req, res) {
 
 })
 
-app.listen(3000);
+app.listen(PORT);

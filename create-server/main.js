@@ -1,4 +1,5 @@
-var http = require('http');
+var http = require('http'),
+    PORT = 3000;
 
 
 http.createServer(function(request, response) {
@@ -6,7 +7,7 @@ http.createServer(function(request, response) {
         'Content-Type': 'json'
     });
     response.end('Say Hello');
-}).listen(8080);
+}).listen(PORT);
 
 
 /*Another option*/
