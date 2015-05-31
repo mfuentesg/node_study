@@ -1,0 +1,14 @@
+{
+  "name": "upload-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-multer.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "multer": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
