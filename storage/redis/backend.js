@@ -15,10 +15,7 @@ redis.select(0, function(err, result) {
     console.log('[Redis] Connected to database 0');
 });
 
-app.get('/', function(request, response) {
-    app.use(express.static(__dirname + '/public'));
-    response.sendFile(__dirname + '/public/index.html');
-});
+app.use('/', express.static(__dirname + '/public'));
 
 server.listen(PORT, function() {
     console.log('[Http] Server listen on port %d', PORT);
